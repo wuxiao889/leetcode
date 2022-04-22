@@ -1,10 +1,12 @@
 package two.sum;
 
 import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.*;
 
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-        HashMap<Integer, Integer> map = new HashMap<>();
+        Hashtable<Integer, Integer> map = new Hashtable<>();
         for (int i = 0; i < nums.length; i++) {
             if (map.containsKey(target - nums[i])) {
                 return new int[]{i, map.get(target - nums[i])};
